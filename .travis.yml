@@ -12,7 +12,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - ./gradlew clean build
+  - ./gradlew --info clean build
 
 after_success:
   - .buildscript/deploy_snapshot.sh
